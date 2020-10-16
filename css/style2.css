@@ -1,0 +1,64 @@
+.Gridwrapper {
+    display: grid;
+    height: 100vw;
+    width: 100vw;
+    grid-template-areas: 
+    "he he he as"
+    "a1 a1 a1 as"
+    "a1 a1 a1 as"
+    "se a2 a2 a2"
+    "a3 a3 a4 a4"
+    "a3 a3 a4 a4"
+    "fo fo fo fo"
+    ;
+    grid-gap: 2px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
+
+.header {
+    grid-area: he;
+    background: aliceblue;
+}
+
+.aside {
+    grid-area: as;
+    background: antiquewhite;
+}
+
+.article1 {
+    grid-area: a1;
+    background: aqua;
+}
+
+.innergridwrapper {
+    grid-area: se;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2px;
+}
+
+.article2 {
+    grid-area: a2;
+    background: aquamarine;
+}
+
+.article3 {
+    grid-area: a3;
+    background: azure;
+}
+
+.article4 {
+    grid-area: a4;
+    background: beige;
+}
+
+.footer {
+    grid-area: fo;
+    background: bisque;
+}
+
+.innerdiv {
+    background: blue;
+}
